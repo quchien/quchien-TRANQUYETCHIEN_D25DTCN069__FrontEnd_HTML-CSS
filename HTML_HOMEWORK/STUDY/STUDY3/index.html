@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form HTML+CSS</title>
+  </head>
+  <body>
+    <!-- Form : Để tạo biểu mẫu thao tác với các dữ liệu -->
+    <!-- method : get - -->
+    <form action="" method="get">
+      <!-- Thẻ input : Tạo những ô người dùng nhập dữ liệu -->
+      <!-- type : Xác định kiểu dữ liệu người dùng nhập -->
+      <!-- Text : Nhập chữ -->
+      <div>Tên người dùng :<input type="text" /></div>
+      <br />
+      <!-- number : Nhập số -->
+      <div>Tuổi :<input type="number" /></div>
+      <br />
+      <!-- email : Nhập gmail -->
+      <div>Email:<input type="email" /></div>
+      <br />
+      <!-- color : Nhập màu -->
+      <div>Chọn màu yêu thích:<input type="" /></div>
+      <br />
+      <!-- date : Nhập ngày tháng năm -->
+      <div>Ngày tháng năm sinh:<input type="date" /></div>
+      <br />
+      <!-- password : Nhập thông tin cần bảo mật -->
+      <div>Mật khẩu:<input type="password" /></div>
+      <br />
+      <!-- range : Nhập range -->
+      <div>Mật khẩu:<input type="range" /></div>
+
+      <!-- Radio : Chọn lựa chọn - chỉ được chọn 1 lựa chọn -->
+      <div>
+        <label for="nam">Nam</label>
+        <input type="radio" id="nam" name="gioiTinh" value="nam" />
+        <label for="nu">Nữ</label>
+        <input type="radio" id="nu" name="gioiTinh" value="nu" />
+      </div>
+
+      <!-- Checkbox : Chọn lựa chọn - chỉ được chọn 1 lựa chọn -->
+      <div>
+        <label for="namCheckBox">Nam check box</label>
+        <input type="checkbox" id="namCheckBox" name="gioiTinh" value="nam" />
+        <label for="nuCheckBox">Nữ check box</label>
+        <input type="checkbox" id="nuCheckBox" name="gioiTinh" value="nu" />
+      </div>
+
+      <!-- Mục : Chọn lựa chọn - chỉ được chọn 1 lựa chọn -->
+      <div>
+        <label for="muThich">Mục yêu thích</label>
+      </div>
+    </form>
+  </body>
+</html>

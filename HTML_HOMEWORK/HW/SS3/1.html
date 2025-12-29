@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt lịch tư vấn học tập</title>
+  </head>
+  <body>
+    <h1>Form đặt lịch tư vấn học tập</h1>
+    <form action="" method="POST">
+      <!-- name -->
+      <label for="name">Name: </label>
+      <input id="name" type="text" name="name" />
+      <br />
+      <!-- date -->
+      <label for="dmy">Chọn ngày giờ</label>
+      <input id="dmy" type="datetime-local" name="dmy" />
+      <br />
+      <!-- Loại dịch vụ -->
+      <label>Sevice: </label>
+      <select size="2" name="sevice">
+        <option selected value="advice study">Tư vấn học tập</option>
+        <option value="advice job">Hướng nghiệp</option>
+      </select>
+      <br />
+      <!-- NOTE -->
+      <label for="note">Ghi chú: </label>
+      <input id="note" type="text" name="note" />
+      <br />
+      <!-- BUTTON đặt lịch -->
+      <button type="submit">Đặt lịch</button>
+    </form>
+  </body>
+</html>

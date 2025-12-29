@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <h1>Đăng kí</h1>
+    <!-- 
+    type - kiểu dự liệu nhập vào
+    id - optional 
+    placeholder - Dữ liệu mẫu (tùy chọn) 
+    name
+    GET - đi kèm url
+    POST - 
+    -->
+    <!-- INPUT - tạo ô người dùng nhập -->
+    <form action="http://www.mysever.com" method="POST">
+      <label for="email">Email</label>
+      <input placeholder="@@@@" id="email" type="email" name="email" />
+      <br />
+      <label for="password">Password</label>
+      <input placeholder="1234" id="password" type="password" name="password" />
+      <br />
+      <!-- telephone -->
+      <label for="telephone">Tel</label>
+      <input
+        placeholder="111-111-111"
+        id="telephone"
+        type="tel"
+        name="telephone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+      />
+      <br />
+      <label for="search">search</label>
+      <input placeholder="@@@@" id="search" type="search" name="search" />
+      <br />
+      <label for="age">Age</label>
+      <input
+        placeholder="@@@@"
+        id="age"
+        type="range"
+        name="age"
+        min="0"
+        max="10"
+        step="2"
+      />
+      <br />
+      <label for="dob">Date of birth</label>
+      <input placeholder="@@@@" id="dob" type="date" name="dob" />
+      <br />
+      <!-- có thể dùng type month, week, time, datetime local -->
+      <label>Gender: </label>
+      <input type="radio" name="gender" value="Female" />
+      <label>Female</label>
+      <input type="radio" name="gender" value="Male" />
+      <label>Male</label>
+      <input type="radio" name="gender" value="Undentify" />
+      <label>Undentify</label>
+      <!-- <input type="reset" value="reset" /> -->
+      <!-- 
+      button
+      reset
+      submit 
+      -->
+      <br />
+      <!-- CHECKBOX (Nhiều tùy chọn) -->
+      <label>Gender: </label>
+      <input type="checkbox" name="gender" value="Female" />
+      <label>Female</label>
+      <input type="checkbox" name="gender" value="Male" />
+      <label>Male</label>
+      <input type="checkbox" name="gender" value="Undentify" />
+      <label>Undentify</label>
+      <br />
+      <!-- SELECT / OPTION -->
+      <!-- 
+      NAME - tên của lựa chọn khi gửi dữ liệu
+       MULTIPLE - Chọn nhiều mục 1 lúc
+       SIZE - Hiển thị số dòng của lựa chọn
+       DISABLE - Vô hiệu hóa lựa chọn
+       SELECTED - Lựa chọn mặc định
+       VALUE - Giá trị của từng tùy chọn ( dùng để gửi dự liệu) 
+       -->
+      <label>Hobby: </label>
+      <select size="2" multiple name="hobbies">
+        <option selected value="read">Read</option>
+        <option value="listen">Listen</option>
+        <option value="speak">Speak</option>
+      </select>
+      <br />
+      <button>Send</button>
+    </form>
+  </body>
+</html>

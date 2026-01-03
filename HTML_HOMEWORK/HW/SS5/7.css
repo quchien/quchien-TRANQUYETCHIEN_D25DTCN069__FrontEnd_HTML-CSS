@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    color: blue;
+    background-color: rgb(207, 207, 207);
+}
+h3 {
+    color: rgb(17, 0, 255);
+    
+}
+#id01 {
+    color:red
+}

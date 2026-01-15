@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: 100px solid blue;
+    /* border-radius:500px ; */
+    padding: 20px;
+    margin-left: 750px;
+}
+.textv2{
+    background-color: rgb(255, 0, 200);
+    width: 200px;
+    height: 200px;
+}
+.demo{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}

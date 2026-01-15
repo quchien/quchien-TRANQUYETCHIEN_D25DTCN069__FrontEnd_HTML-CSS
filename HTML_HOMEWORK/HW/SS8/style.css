@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  width: 100%;
+  background-color: #32465a;
+  height: 95px;
+  text-align: center;
+  padding-top: 30px;
+  position: fixed;
+  z-index: 1000;
+}
+nav a {
+  color: aliceblue;
+  padding: 20px;
+  font-size: x-large;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+nav a:hover {
+  background-color: #465769;
+  text-decoration: underline;
+}
+#body {
+  padding-top: 95px;
+}
+#title {
+  text-align: center;
+  background-color: #476887;
+  font-size: x-large;
+  padding: 40px 0px 80px;
+  line-height: 70px;
+  color: white;
+}
+#title button {
+  width: 220px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: large;
+  color: white;
+}
+#start {
+  border: none;
+  background-color: #3a8ec6;
+  transition: all 0.5s ease;
+}
+#start:hover {
+  background-color: #2980b9;
+  transform: translateY(-20px);
+}
+#info {
+  background-color: #476887;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+#info:hover {
+  transform: translateY(20px);
+  background-color: #577491;
+}
+#content {
+  margin: 0px 200px 0px;
+  line-height: 50px;
+}
+#intro {
+  font-size: x-large;
+  color: #3498db;
+  display: inline-block;
+  margin-top: 90px;
+}
+#intro h2 {
+  margin-bottom: 30px;
+}
+#intro ul {
+  list-style: none;
+}
+#intro li {
+  position: relative;
+}
+#intro li:nth-child(2n) {
+  color: black;
+  list-style: none;
+}
+
+#intro li:nth-child(2n + 1)::before {
+  font-size: larger;
+  content: ".";
+  font-size: 400px;
+  position: absolute;
+  left: -100px;
+  top: -100px;
+}
+#intro p {
+  margin-top: 60px;
+  color: black;
+}
+#sample {
+  font-size: x-large;
+  text-align: center;
+  margin-top: 100px;
+}
+#sample h2 {
+  color: #2c3e50;
+}
+#sample img {
+  width: 250px;
+  height: 350px;
+  margin: 60px 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+#sample img:hover {
+  transform: scale(1.2);
+}
+#feature {
+  font-size: x-large;
+  text-align: center;
+  margin-top: 100px;
+}
+#feature h2 {
+  color: #2c3e50;
+}
+#feature p {
+  font-size: large;
+}
+.feature-card {
+  text-align: left;
+  border: 1px solid #80f0ff;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px;
+  position: relative;
+  transition: all 0.8s ease;
+}
+.feature-icon {
+  font-size: xx-large;
+  position: absolute;
+  right: 40px;
+  top: 65px;
+}
+.feature-card:hover {
+  transform: translateX(-100px);
+}
+
+#form {
+  width: 700px;
+  margin: auto;
+  background-color: #fff;
+  padding: 35px 40px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: larger;
+}
+
+#form h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+#form > div {
+  margin-bottom: 22px;
+}
+
+#form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form select,
+#form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+}
+
+#form select {
+  border: 2px solid #2f80ed;
+}
+
+#form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#form input[type="radio"],
+#form input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2f80ed;
+  margin-right: 8px;
+}
+
+#form div label input {
+  margin-right: 8px;
+}
+
+#form div label {
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+#form div input[type="radio"] {
+  margin-right: 6px;
+}
+
+#form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #c63c2d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+#form button:hover {
+  background-color: #c0392b;
+  transform: translateY(-20px);
+}
+#advan {
+  font-size: x-large;
+  text-align: left;
+  margin-top: 100px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+#advan h2 {
+  color: #c63c2d;
+}
+#advan table {
+  width: 100%;
+  margin: auto;
+  border: none;
+  border-collapse: collapse;
+}
+#advan th,
+td {
+  border-bottom: 1px solid #465769;
+  padding: 10px;
+}
+#advan th {
+  background-color: #c63c2d;
+  color: white;
+}
+#advan tr:hover {
+  transition: all 0.5s ease;
+}
+#advan tr:hover {
+  background-color: #fff3f3;
+}
+.yellow {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 10px;
+  margin: 20px 0px;
+}
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer-content h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.footer-content p {
+  opacity: 0.8;
+  line-height: 1.8;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

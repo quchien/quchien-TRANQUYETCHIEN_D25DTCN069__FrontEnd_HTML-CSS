@@ -1,0 +1,86 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f0f9ff;
+  color: #1f2937;
+  font-size: 18px;
+}
+h1 {
+  color: #0f766e;
+  text-align: center;
+  background-color: #ccfbf1;
+  font-size: 32px;
+}
+
+.menu {
+  background-color: #e0f2fe;
+  text-align: center;
+}
+
+.menu a {
+  color: #0369a1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  background-color: #0284c7;
+}
+
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #004d40;
+}
+
+input,
+select,
+textarea {
+  width: 280px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #777;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+button {
+  margin-top: 25px;
+  padding: 8px 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #0d9488;
+  border: 1px solid #004d40;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0f766e;
+}
+.footer {
+  background-color: #0f766e;
+  color: #f0fdfa;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer p {
+  margin: 4px 0;
+}

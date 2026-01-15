@@ -1,0 +1,59 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f0f9ff;
+  color: #1f2937;
+  font-size: 18px;
+}
+
+h1 {
+  color: #0f766e;
+  text-align: center;
+  background-color: #ccfbf1;
+  font-size: 32px;
+}
+
+.menu {
+  background-color: #e0f2fe;
+  text-align: center;
+}
+
+.menu a {
+  color: #0369a1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  background-color: #0284c7;
+}
+
+h2 {
+  color: #155e75;
+  font-size: 24px;
+}
+
+.section {
+  background-color: #ffffff;
+}
+
+.service-item {
+  color: #0f172a;
+}
+
+.service-item:hover {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.footer {
+  background-color: #0f766e;
+  color: #f0fdfa;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer p {
+  margin: 4px 0;
+}

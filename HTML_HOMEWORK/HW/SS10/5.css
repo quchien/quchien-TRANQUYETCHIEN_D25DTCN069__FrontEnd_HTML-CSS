@@ -1,0 +1,85 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f5f2;
+      }
+
+      .hero {
+        height: 60vh;
+        background: url("https://th.bing.com/th/id/OIP._Qc1LJu9ZYaztflX8YKavgHaHy?w=166&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3")
+          center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .gallery {
+        max-width: 1000px;
+        margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 20px;
+      }
+
+      .gallery img {
+        width: calc(33.333% - 20px);
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      .reservation {
+        background: #8b0000;
+        color: white;
+        padding: 50px 20px;
+      }
+
+      .reservation h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .reservation form {
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .reservation input {
+        flex: 1 1 280px;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      .reservation button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        background: white;
+        color: #8b0000;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      footer {
+        background: #111;
+        color: #aaa;
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+      }

@@ -1,0 +1,146 @@
+* {
+  margin: 20;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6b4a;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  background: #ff6b4a;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+/* Hero */
+.hero {
+  background: url("Section.png") center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+/* Section */
+.section {
+  background: #faf7f4;
+  padding: 60px 50px;
+}
+
+.section.light {
+  background: #faf7f4;
+}
+
+.title {
+  text-align: center;
+  color: #ff6b4a;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  width: 300px;
+  padding: 0px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 12px; 
+  overflow: hidden; 
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.price {
+  color: #ff6b4a;
+  font-weight: bold;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  background: #eee;
+  width: 300px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+  background: #2a2520;
+  color: #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.footer h3 {
+  color: #ff6b4a;
+  margin-bottom: 15px;
+}

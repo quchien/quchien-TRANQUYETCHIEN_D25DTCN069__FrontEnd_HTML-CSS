@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learning Dashboard</title>
+    <link rel="stylesheet" href="BTTH.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Elearning</div>
+
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm khóa học..." />
+      </div>
+
+      <nav class="menu">
+        <a href="#">Khóa học</a>
+        <a href="#">Tiến độ</a>
+        <a href="#">Hồ sơ</a>
+      </nav>
+
+      <div class="hamburger">☰</div>
+    </header>
+    <main class="container">
+      <section class="welcome">
+        <h2>Xin chào, Bạn tôi!</h2>
+        <p>Chúc bạn học tập hiệu quả hôm nay</p>
+
+        <div class="progress">
+          <span>Tiến độ tổng: 68%</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Khóa học đang học</h3>
+
+        <div class="course-list">
+          <div class="course-card">
+            <img src="css.jpg" />
+            <div class="course-body">
+              <h4>CSS Flexbox & Grid</h4>
+              <p>Hoàn thành: 85%</p>
+              <button>Tiếp tục học</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="docker.jpg" />
+            <div class="course-body">
+              <h4>JavaScript Cơ bản</h4>
+              <p>Hoàn thành: 42%</p>
+              <button>Tiếp tục học</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="html.jpg" />
+            <div class="course-body">
+              <h4>Responsive Web Design</h4>
+              <p>Hoàn thành: 60%</p>
+              <button>Tiếp tục học</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h3>Khóa học gợi ý</h3>
+
+        <div class="course-list small">
+          <div class="course-card">
+            <img src="JS.jpg" />
+            <div class="course-body">
+              <h4>React cho người mới</h4>
+              <p>Bắt đầu ngay hôm nay</p>
+              <button>Bắt đầu ngay</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="python.jpg" />
+            <div class="course-body">
+              <h4>Python Cơ bản</h4>
+              <p>Phù hợp beginner</p>
+              <button>Bắt đầu ngay</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

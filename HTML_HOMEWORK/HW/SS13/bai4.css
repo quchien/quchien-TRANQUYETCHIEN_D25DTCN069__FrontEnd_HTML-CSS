@@ -1,0 +1,130 @@
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f6fa;
+        }
+
+        header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #e53935;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a.active {
+            color: #5b5ef7;
+            background: #eef0ff;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #5b5ef7, #6c63ff);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 15px;
+        }
+
+        .tabs-wrapper {
+            background: #fff;
+            padding: 20px;
+        }
+
+        .tabs {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            background: #5b5ef7;
+            color: #fff;
+            border-color: #5b5ef7;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab {
+                text-align: center;
+            }
+
+            .banner h1 {
+                font-size: 26px;
+            }
+        }

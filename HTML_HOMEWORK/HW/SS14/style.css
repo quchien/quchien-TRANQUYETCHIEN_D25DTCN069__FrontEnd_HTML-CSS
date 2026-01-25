@@ -1,0 +1,607 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+      }
+      header a {
+        text-decoration: none;
+        color: black;
+      }
+      header nav {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      header button {
+        padding: 10px 20px;
+        border-radius: 7px;
+        margin-right: 15px;
+      }
+      #login-btn {
+        border: 2px solid #6366f1;
+        color: #6366f1;
+        background-color: white;
+        font-weight: 700;
+      }
+      #signup-btn {
+        border: 2px solid #6366f1;
+        color: white;
+        background-color: #6366f1;
+        font-weight: 700;
+      }
+      #body {
+        background-color: #ffffff;
+      }
+      #title {
+        background-color: #6366f1;
+        display: flex;
+        justify-content: center;
+        color: white;
+        gap: 80px;
+        font-size: clamp(14px, 2.5vw, 16px);
+      }
+      #title h2 {
+        color: #6366f1;
+      }
+      #title p {
+        color: grey;
+      }
+      .title-text {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+      }
+      .title-btn {
+        text-align: center;
+      }
+      .title-btn button {
+        padding: 15px 40px;
+        background-color: #6366f1;
+        color: white;
+        border: none;
+        margin-right: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      #more-info {
+        border: 2px solid white;
+        background-color: transparent;
+      }
+      .title-numb {
+        display: flex;
+        flex-direction: column;
+        width: 553px;
+        gap: 25px;
+        padding: 40px 0px;
+      }
+      .title-numb-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 228.78px;
+        background-color: white;
+        border-radius: 20px;
+      }
+      .title-numb-bottom {
+        display: flex;
+        height: 228.78px;
+        gap: 25px;
+      }
+      .title-numb-bottom div {
+        background-color: white;
+        width: 48%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #introduce {
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .reason-card {
+        display: flex;
+        gap: 30px;
+      }
+      .card {
+        width: 265px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: #ffffff;
+        height: auto;
+        padding: 60px 0px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+      .card p {
+        margin: 0px 40px;
+      }
+      .session {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        gap: 50px;
+        margin-top: 60px;
+        padding: 0 20px;
+      }
+      .session-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .course-card {
+        width: 100%;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        font-family: "Roboto", sans-serif;
+      }
+
+      .card-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .card-img-container {
+        position: relative;
+      }
+
+      .badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+      }
+
+      .badge.hot {
+        background-color: #ff4757;
+      }
+
+      .badge.new {
+        background-color: #a78bfa;
+      }
+
+      .badge.bestseller {
+        background-color: #f472b6;
+      }
+
+      .card-body {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .tag {
+        color: #6366f1;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #1f2937;
+      }
+
+      .desc {
+        font-size: 14px;
+        color: #6b7280;
+        line-height: 1.5;
+      }
+
+      .info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 13px;
+        color: #6b7280;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        margin: 12px 0;
+      }
+
+      .price-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .price-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .old-price {
+        text-decoration: line-through;
+        font-size: 13px;
+        color: #9ca3af;
+      }
+
+      .new-price {
+        font-size: 18px;
+        font-weight: 700;
+        color: #6366f1;
+      }
+
+      .buy-btn {
+        background: #6366f1;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .buy-btn:hover {
+        opacity: 0.9;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #1f2937;
+        color: #d1d5db;
+        padding: 60px 40px;
+        margin-top: 80px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-about h3 {
+        font-size: 24px;
+        color: #f97316;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      .footer-about p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #9ca3af;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 15px;
+      }
+
+      .footer-socials a {
+        color: #d1d5db;
+        text-decoration: none;
+        font-size: 13px;
+        transition: color 0.3s;
+      }
+
+      .footer-socials a:hover {
+        color: #f97316;
+      }
+
+      .footer-column h4 {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column ul li {
+        margin-bottom: 12px;
+      }
+
+      .footer-column ul li a {
+        color: #9ca3af;
+        text-decoration: none;
+        font-size: 13px;
+        transition: color 0.3s;
+      }
+
+      .footer-column ul li a:hover {
+        color: #f97316;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #374151;
+        margin-top: 40px;
+        padding-top: 20px;
+        text-align: center;
+        color: #6b7280;
+        font-size: 13px;
+      }
+
+      /* Responsive Footer */
+      @media (max-width: 1024px) and (min-width: 768px) {
+        footer {
+          padding: 40px 30px;
+        }
+
+        .footer-content {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        footer {
+          padding: 30px 15px;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .footer-about h3 {
+          font-size: 18px;
+        }
+
+        .footer-column h4 {
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+
+        .footer-column ul li {
+          margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+          font-size: 12px;
+        }
+      }
+
+      /* Tablet: 768px - 1024px */
+      @media (max-width: 1024px) and (min-width: 768px) {
+        header {
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+        header nav {
+          gap: 15px;
+          font-size: 14px;
+        }
+        #title {
+          gap: 40px;
+          flex-direction: column;
+          padding: 40px 20px;
+        }
+        .title-numb {
+          width: 100%;
+          max-width: 500px;
+        }
+        .session-card-container {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+        .reason-card {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .card {
+          width: 100%;
+        }
+      }
+
+      /* Mobile: nhỏ hơn 768px */
+      @media (max-width: 767px) {
+        .break {
+          display: none;
+        }
+
+        /* Header */
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 15px;
+          gap: 15px;
+        }
+        header img {
+          height: 30px;
+        }
+        header nav {
+          margin: 10px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          font-size: 13px;
+        }
+        header button {
+          padding: 8px 15px;
+          font-size: 12px;
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+
+        /* Title Section */
+        #title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 30px 15px;
+          gap: 30px;
+        }
+        .title-text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin: 0;
+        }
+        .title-text h1 {
+          font-size: 24px;
+        }
+        .title-text span {
+          font-size: 13px;
+          line-height: 1.6;
+        }
+        .title-btn {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          gap: 10px;
+          margin-top: 15px;
+        }
+        .title-btn button {
+          width: 100%;
+          padding: 12px 20px;
+          font-size: 13px;
+        }
+
+        /* Number Section */
+        .title-numb {
+          width: 100%;
+          gap: 15px;
+          padding: 20px 0px;
+        }
+        .title-numb-top {
+          height: auto;
+          padding: 20px;
+        }
+        .title-numb-top h2 {
+          font-size: 28px;
+        }
+        .title-numb-bottom {
+          gap: 15px;
+          height: auto;
+        }
+        .title-numb-bottom div {
+          width: 48%;
+          padding: 20px;
+        }
+
+        /* Introduce Section */
+        #introduce {
+          padding-top: 40px;
+          gap: 25px;
+        }
+        #introduce h2 {
+          font-size: 20px;
+        }
+        .reason-card {
+          flex-direction: column;
+          gap: 15px;
+          width: 100%;
+          padding: 0 15px;
+        }
+        .card {
+          width: 100%;
+          padding: 30px 0px;
+          gap: 15px;
+        }
+        .card h2 {
+          font-size: 24px;
+        }
+        .card h3 {
+          font-size: 16px;
+        }
+        .card p {
+          margin: 0px 20px;
+          font-size: 13px;
+        }
+
+        /* Session Section */
+        .session {
+          width: 100%;
+          padding: 0 15px;
+          margin-top: 40px;
+          gap: 30px;
+        }
+        .session h2 {
+          font-size: 20px;
+        }
+        .session > p {
+          font-size: 13px;
+        }
+        .session-card-container {
+          grid-template-columns: 1fr;
+          gap: 15px;
+          width: 100%;
+        }
+        .course-card {
+          width: 100%;
+        }
+        .card-img {
+          height: 150px;
+        }
+        .card-body {
+          padding: 15px;
+          gap: 8px;
+        }
+        .tag {
+          font-size: 12px;
+        }
+        .title {
+          font-size: 16px;
+        }
+        .desc {
+          font-size: 12px;
+        }
+        .info {
+          font-size: 11px;
+          gap: 8px;
+        }
+        .old-price {
+          font-size: 11px;
+        }
+        .new-price {
+          font-size: 16px;
+        }
+        .buy-btn {
+          padding: 8px 12px;
+          font-size: 12px;
+        }
+      }
